@@ -84,7 +84,7 @@ Each firmware release publishes its `.hex` with a SHA-256 checksum: the same fil
 
 ### Where it is used
 
-| | |
+| Domain | Examples |
 |---|---|
 | **Healthcare IoT** | Fall detection for seniors on the edge, vital-signs monitoring, baby cry and siren recognition, PDPA-aware data handling |
 | **Industry 4.0** | Factory alarm detection with audio AI, predictive maintenance, visual inspection, OT network segmentation |
@@ -113,90 +113,90 @@ Website: [www.tesaiot.com](https://www.tesaiot.com) · [www.tesa.or.th](https://
 <details>
 <summary><h2>🇹🇭 ภาษาไทย</h2></summary>
 
-### เราสร้างอะไร
+### TESAIoT คืออะไร
 
-TESAIoT คือแพลตฟอร์มพื้นฐาน AIoT แบบเปิด ครบตั้งแต่ต้นจนจบ สำหรับผลิตภัณฑ์ที่ต้องปลอดภัยตั้งแต่เฟิร์มแวร์บรรทัดแรก ได้แก่ การยืนยันตัวตนของอุปกรณ์ การเชื่อมต่อแบบเข้ารหัส Edge AI บนตัวอุปกรณ์ และการวิเคราะห์ข้อมูลบนคลาวด์ ออกแบบมาสำหรับอุตสาหกรรมที่มีข้อกำกับและระบบที่ต้องทำงานโดยไม่มีวันล้มเหลว และพร้อมสำหรับฉลากความมั่นคงปลอดภัยไซเบอร์ (CLS, ETSI EN 303 645)
+TESAIoT คือ AIoT Foundation Platform แบบ open และ end-to-end สำหรับผลิตภัณฑ์ที่ต้อง secure ตั้งแต่ firmware บรรทัดแรก ครอบคลุม device identity, encrypted connectivity, Edge AI บนตัวอุปกรณ์ และ data analytics บน cloud ออกแบบมาสำหรับ regulated industries และ mission-critical systems พร้อมรองรับ Cybersecurity Labelling Scheme (CLS, ETSI EN 303 645)
 
-พัฒนาในประเทศไทย มีเอกสารทั้งภาษาไทยและภาษาอังกฤษ และเปิดซอร์สภายใต้สัญญาอนุญาต Apache-2.0 ในทุกส่วนที่ TESA เป็นผู้เขียน
+พัฒนาในประเทศไทย มีเอกสารทั้งภาษาไทยและอังกฤษ และเป็น open source ภายใต้ Apache-2.0 ในทุกส่วนที่ TESA เป็นผู้เขียน
 
 <p align="center">
-  <img src="assets/secure-edge-ai-economy-platform.jpg" alt="แพลตฟอร์มเศรษฐกิจ Edge AI ที่ปลอดภัย: ฐาน AIoT, โมดูลหลักและการพัฒนาผลิตภัณฑ์, การขยายสู่เชิงพาณิชย์" width="100%">
+  <img src="assets/secure-edge-ai-economy-platform.jpg" alt="Secure Edge AI Economy Platform by TESAIoT" width="100%">
 </p>
 
-| ชั้น | สิ่งที่ได้ |
+| Layer | สิ่งที่ได้ |
 |---|---|
-| **1 · ฐาน AIoT** | AIoT SoM และ BSP (ModusToolbox, Zephyr OS, MicroPython), ชุดเฟิร์มแวร์ที่ปลอดภัยและพร้อมขอฉลาก CLS, DEEPCRAFT Studio สำหรับสร้างโมเดล Edge AI, Digital Twin Studio และแพลตฟอร์มข้อมูล Edge AI ที่ปลอดภัย |
-| **2 · โมดูลหลักและการพัฒนาผลิตภัณฑ์** | TESAIoT Dev Kit, IoT Gateway, BCU/BMS, ตัวขับเคลื่อนอัจฉริยะ, Ternion Digital Twin Studio และคลาวด์สำหรับองค์กร |
-| **3 · ขยายสู่เชิงพาณิชย์** | การแพทย์ ยานยนต์ไฟฟ้าขนาดเล็กและพลังงาน หุ่นยนต์บริการ โครงสร้างพื้นฐานสำคัญ และอุตสาหกรรมสร้างสรรค์ |
+| **1 · AIoT Foundation** | AIoT SoM & BSP (ModusToolbox, Zephyr OS, MicroPython), Secure Firmware Stack ที่ CLS-ready, DEEPCRAFT Studio สำหรับ Edge AI model, Digital Twin Studio และ Secure Edge AI Data Platform |
+| **2 · Core Modules & Product Development** | TESAIoT Dev Kit, IoT Gateway, BCU/BMS, Intelligence Actuator, Ternion Digital Twin Studio และ Enterprise Cloud |
+| **3 · Commercial Scaling** | Healthcare, LEV & Energy, Service Robotics, Critical Infrastructure และ Creative Industries |
 
-### เริ่มต้นที่คลังโค้ดเปิดของเรา
+### เริ่มต้นที่ open repositories ของเรา
 
-| คลัง | คืออะไร | เริ่มที่ |
+| Repository | คืออะไร | เริ่มที่ |
 |---|---|---|
-| [**tesaiot-pse84-devkit-sdk**](https://github.com/tesaiot/tesaiot-pse84-devkit-sdk) | ชุดเฟิร์มแวร์และ SDK สำหรับ Infineon PSoC™ Edge E84: เทมเพลตโปรเจกต์ ModusToolbox และ ModusToolbox + MicroPython ตัวอย่างภาษา C เอกสาร API และเฟิร์มแวร์ที่ทดสอบบนบอร์ดจริงแล้ว | [เอกสาร](https://tesaiot.github.io/tesaiot-pse84-devkit-sdk/) · [เฟิร์มแวร์ล่าสุด](https://github.com/tesaiot/tesaiot-pse84-devkit-sdk/releases/latest) |
-| [**tesaiot-community-edition**](https://github.com/tesaiot/tesaiot-community-edition) | แพลตฟอร์ม IoT ที่ปลอดภัย ใช้ฟรี ติดตั้งเองได้สำหรับหนึ่งองค์กร: ระบุตัวตนอุปกรณ์ด้วย Vault PKI (server-TLS และ mTLS), EMQX MQTT broker, APISIX gateway, เก็บข้อมูลด้วย MongoDB + TimescaleDB ติดตั้งด้วย Docker Compose คำสั่งเดียว | [ภาพรวม](https://www.tesaiot.com/#community-edition) |
-| [**developer-hub**](https://github.com/tesaiot/developer-hub) | ศูนย์รวมนักพัฒนาที่ครอบคลุมทุกชั้น: เฟิร์มแวร์บน MCU มิดเดิลแวร์บนอุปกรณ์ปลายทาง และเว็บแอปในเบราว์เซอร์ นำตัวอย่างไปดัดแปลงต่อได้ทันที | [เปิด Developer Hub](https://tesaiot.github.io/developer-hub/) |
-| [**tesa-qualification-program**](https://github.com/tesaiot/tesa-qualification-program) | TESA Open Knowledge: คลังความรู้เปิดด้านระบบสมองกลฝังตัว AIoT และ Edge AI และหลักสูตร TESA Qualification Program (TESA × Infineon) | [เว็บหลักสูตร](https://tesaiot.github.io/tesa-qualification-program/) |
+| [**tesaiot-pse84-devkit-sdk**](https://github.com/tesaiot/tesaiot-pse84-devkit-sdk) | TESAIoT Firmware Stack & SDK สำหรับ Infineon PSoC™ Edge E84 — project template แบบ ModusToolbox และ ModusToolbox + MicroPython พร้อมตัวอย่าง C, API reference และ firmware ที่ทดสอบบนบอร์ดจริงแล้ว | [Docs](https://tesaiot.github.io/tesaiot-pse84-devkit-sdk/) · [Latest firmware](https://github.com/tesaiot/tesaiot-pse84-devkit-sdk/releases/latest) |
+| [**tesaiot-community-edition**](https://github.com/tesaiot/tesaiot-community-edition) | Secure IoT platform ที่ใช้ฟรีและ self-host ได้สำหรับหนึ่งองค์กร — Vault PKI device identity (server-TLS & mTLS), EMQX MQTT broker, APISIX gateway, telemetry บน MongoDB + TimescaleDB ติดตั้งด้วย Docker Compose คำสั่งเดียว | [Overview](https://www.tesaiot.com/#community-edition) |
+| [**developer-hub**](https://github.com/tesaiot/developer-hub) | Hub เดียวที่ครอบคลุมทั้ง stack — firmware บน MCU, middleware บน edge และ web application บน browser นำตัวอย่างไป remix ต่อได้ทันที | [Developer Hub](https://tesaiot.github.io/developer-hub/) |
+| [**tesa-qualification-program**](https://github.com/tesaiot/tesa-qualification-program) | TESA Open Knowledge — คลังความรู้เปิดด้าน Embedded Systems, AIoT และ Edge AI และหลักสูตร TESA Qualification Program (TESA × Infineon) | [Course site](https://tesaiot.github.io/tesa-qualification-program/) |
 
-### TESAIoT Dev Kit: ฮาร์ดแวร์และเฟิร์มแวร์ที่รันอยู่บนบอร์ดจริง
+### TESAIoT Dev Kit: hardware พร้อม firmware ที่รันอยู่บนบอร์ดจริง
 
-บอร์ด Edge AI สามคอร์ ที่มาพร้อมเฟิร์มแวร์ทั้งหมดในรูป SDK แบบเปิด เปิดเครื่องแล้วขึ้นเมนูแบบสัมผัส อ่านเซนเซอร์ได้ทุกตัว รัน MicroPython เชื่อมคลาวด์ผ่าน TLS และรันโมเดล Edge AI บน NPU
+Edge AI board แบบ 3 core ที่มาพร้อม firmware ทั้งหมดในรูป open SDK — boot ขึ้นมาเป็น touch menu อ่าน sensor ได้ทุกตัว รัน MicroPython คุยกับ cloud ผ่าน TLS และรัน Edge AI model บน NPU
 
-- **ชิป:** Cortex-M55 400 MHz พร้อม Helium และ NPU Ethos-U55 กับ Cortex-M33 อีก 2 คอร์ที่มี TrustZone, Wi-Fi 6 และ BLE, จอสัมผัส 4.3 นิ้ว
-- **ความปลอดภัย:** ใช้ OPTIGA™ Trust M เป็นรากฐานความเชื่อถือระดับฮาร์ดแวร์ มี secure boot และตัวตนอุปกรณ์ที่ผูกกับ HSM ส่วน mTLS ใช้กุญแจส่วนตัวที่ไม่เคยออกจากชิป
-- **โค้ดเปิด:** ภาษา C ประมาณ 237,000 บรรทัด API สาธารณะมากกว่า 60 ตัว และตัวอย่างภาษา C 31 ตัวในคลัง
-- **เอกสาร:** 838 หน้า ทั้งภาษาไทยและอังกฤษ
-- **build ได้สองแบบ:** ภาษา C ล้วนด้วย ModusToolbox หรือ C ร่วมกับ MicroPython ใช้ไลบรารีชุดเดียวกัน บนบอร์ดเดียวกัน
+- **Silicon:** Cortex-M55 400 MHz + Helium + Ethos-U55 NPU และ Cortex-M33 อีก 2 core พร้อม TrustZone, Wi-Fi 6 + BLE, 4.3" touch display
+- **Security:** OPTIGA™ Trust M เป็น hardware root of trust, secure boot, HSM-backed device identity และ mTLS ที่ private key ไม่เคยออกจาก silicon
+- **Open source:** C ประมาณ 237,000 บรรทัด, public API มากกว่า 60 ตัว และ C example 31 ตัวใน repo
+- **Documentation:** 838 หน้า ภาษาไทยและอังกฤษ
+- **Build ได้ 2 แบบ:** C ล้วนด้วย ModusToolbox หรือ C + MicroPython ใช้ library ชุดเดียวกัน บนบอร์ดเดียวกัน
 
 ```bash
 git clone https://github.com/tesaiot/tesaiot-pse84-devkit-sdk.git
 cd tesaiot-pse84-devkit-sdk/bento-firmware-template-mtb-mpy   # หรือ bento-firmware-template-mtb-only
-./setup.sh --build      # ตรวจเครื่องมือก่อน แล้วจึง build
-make program            # จากนั้นถอดสาย USB ออกจนสุด รอสิบวินาที แล้วเสียบใหม่
+./setup.sh --build      # ตรวจ toolchain ก่อน แล้วจึง build
+make program            # จากนั้นถอด USB ออกจนสุด รอ 10 วินาที แล้วเสียบใหม่
 ```
 
-เฟิร์มแวร์ทุกรุ่นเผยแพร่ไฟล์ `.hex` พร้อมค่า SHA-256 เป็นไฟล์เดียวกับที่เราแฟลชลงบอร์ดทดสอบของเราเอง
+Firmware ทุก release มีไฟล์ `.hex` พร้อม SHA-256 — เป็นไฟล์เดียวกับที่เรา flash ลงบอร์ดทดสอบของเราเอง
 
 ### AIoT Foundation Platform
 
 <p align="center">
-  <img src="assets/aiot-foundation-platform.jpg" alt="ภาพรวม AIoT Foundation Platform: ชั้นอุปกรณ์ ระบบปฏิบัติการฝังตัว หลังบ้าน และหน้าบ้าน" width="100%">
+  <img src="assets/aiot-foundation-platform.jpg" alt="Overall AIoT Foundation Platform" width="100%">
 </p>
 
-- **ปลอดภัยตั้งแต่การออกแบบ:** สอดคล้องมาตรฐาน ETSI EN 303 645, PKI 4 ชั้นที่ออกและต่ออายุใบรับรองอัตโนมัติ และปกป้องกุญแจด้วย HSM
-- **เชื่อมต่ออย่างปลอดภัย:** MQTTs และ HTTPS แบบ server-TLS หรือ mTLS และลงทะเบียนอุปกรณ์ด้วยใบรับรองจากโรงงานของ Infineon OPTIGA™ Trust M
-- **ข้อมูลอัจฉริยะ:** โครงสร้างข้อมูลสำหรับอุตสาหกรรมต่าง ๆ ข้อมูลเทเลเมทรีสดที่ผ่านการตรวจสอบ และ ETL พร้อมการติดป้ายข้อมูลสำหรับ Edge AI
-- **Digital Twin:** ออกแบบและพัฒนาผลิตภัณฑ์แบบเรียลไทม์บนข้อมูลสดจากอุปกรณ์
+- **Security by Design:** สอดคล้อง ETSI EN 303 645, 4-tier PKI ที่ออกและ renew certificate อัตโนมัติ และ HSM key protection
+- **Secure AIoT Connectivity:** MQTTs & HTTPS แบบ server-TLS หรือ mTLS และ hardware-based onboarding ด้วย factory certificate ของ Infineon OPTIGA™ Trust M
+- **Smart Data Schema & Industrial Domains:** validation และ live telemetry พร้อม ETL และ data labelling สำหรับ Edge AI
+- **Digital Twin:** real-time product design & development บน live data จากอุปกรณ์
 
 <p align="center">
-  <img src="assets/tesaiot-platform-use-cases.jpg" alt="TESAIoT Platform: การยืนยันตัวตนที่อุปกรณ์ บริการพื้นฐาน และกรณีใช้งาน" width="100%">
+  <img src="assets/tesaiot-platform-use-cases.jpg" alt="TESAIoT Platform: edge identity & authentication, applications & use cases" width="100%">
 </p>
 
-### นำไปใช้ที่ไหนได้บ้าง
+### Applications & Use Cases
 
-| | |
+| Domain | ตัวอย่าง |
 |---|---|
-| **IoT การแพทย์** | ตรวจจับการล้มของผู้สูงอายุบนตัวอุปกรณ์ ติดตามสัญญาณชีพต่อเนื่อง จดจำเสียงเด็กร้องและเสียงไซเรน จัดการข้อมูลตาม PDPA |
-| **อุตสาหกรรม 4.0** | ตรวจจับเสียงสัญญาณเตือนในโรงงานด้วย AI เสียง บำรุงรักษาเชิงคาดการณ์ ตรวจชิ้นงานด้วยภาพ แบ่งส่วนเครือข่าย OT |
-| **พลังงานอัจฉริยะ** | ประมวลผลที่ปลายทางอย่างประหยัดพลังงาน เชื่อมต่อโครงข่ายไฟฟ้า จัดการการชาร์จรถไฟฟ้า พยากรณ์พลังงานแสงอาทิตย์และแบตเตอรี่ |
-| **บ้านและเมืองอัจฉริยะ** | TLS และการเก็บกุญแจบนอุปกรณ์ ลงทะเบียน Matter ยืนยันตัวตนอุปกรณ์เสริม เปิดใช้งานผลิตภัณฑ์ |
-| **การเดินทาง** | รถยนต์และยานยนต์ไฟฟ้าขนาดเล็ก: ความปลอดภัยขั้นสูงด้วย TPM ระบบเข้าถึงรถ ยืนยันตัวตนอุปกรณ์เสริม |
+| **Healthcare IoT** | Fall detection สำหรับผู้สูงอายุด้วย Edge AI, vital signs monitoring, baby cry & siren recognition, รองรับ PDPA |
+| **Industry 4.0** | Factory alarm detection ด้วย audio AI, predictive maintenance, visual inspection, OT network segmentation |
+| **Smart Energy** | Energy-efficient edge computing, smart grid integration, EV charging optimization, solar & battery forecasting |
+| **Smart Home & City** | TLS & key storage บนอุปกรณ์, Matter provisioning, accessory authentication, product activation |
+| **Mobility (Car & LEVs)** | Advanced security ด้วย TPM, Car Access (CCC), accessory authentication |
 
 <p align="center">
-  <img src="assets/accelerated-product-development.jpg" alt="เร่งการพัฒนาผลิตภัณฑ์: จากบอร์ดหลักและเฟิร์มแวร์ สู่แอปพลิเคชัน บริการ และการวิเคราะห์ข้อมูล" width="100%">
+  <img src="assets/accelerated-product-development.jpg" alt="Accelerated Product Development" width="100%">
 </p>
 
-### เรียนรู้ไปกับเรา
+### Learn with us
 
-- **คอร์สวิดีโอ:** 28 ตอน ยาวประมาณ 4 ชั่วโมง 18 นาที ถ่ายทำกับฮาร์ดแวร์จริง ได้แก่ ภาพรวมแพลตฟอร์ม การลงเฟิร์มแวร์บนบอร์ด Digital Twin และคอร์ส BitStream Studio ดูได้ที่ [tesaiot.com](https://www.tesaiot.com)
-- **TESA Qualification Program:** สื่อการเรียนแบบเปิดด้านระบบสมองกลฝังตัว AIoT และ Edge AI ดูได้ที่ [tesa-qualification-program](https://tesaiot.github.io/tesa-qualification-program/)
-- **Developer Hub:** ตัวอย่างครอบคลุมเฟิร์มแวร์ มิดเดิลแวร์ และเว็บ ดูได้ที่ [developer-hub](https://tesaiot.github.io/developer-hub/)
+- **Video course:** 28 ตอน รวมประมาณ 4 ชั่วโมง 18 นาที บันทึกกับ hardware จริง — platform overview, การ flash firmware ลงบอร์ด, Digital Twin และ BitStream Studio course ดูได้ที่ [tesaiot.com](https://www.tesaiot.com)
+- **TESA Qualification Program:** open courseware ด้าน Embedded Systems, AIoT และ Edge AI ที่ [tesa-qualification-program](https://tesaiot.github.io/tesa-qualification-program/)
+- **Developer Hub:** ตัวอย่างครบทั้ง firmware, middleware และ web ที่ [developer-hub](https://tesaiot.github.io/developer-hub/)
 
-### สัญญาอนุญาตและการติดต่อ
+### License & Contact
 
-ซอร์สโค้ดที่ TESA เป็นผู้เขียนเผยแพร่ภายใต้ **Apache License 2.0** ไลบรารีของบุคคลภายนอกจำนวนหนึ่งใช้สัญญาอนุญาตของตนเอง ซึ่งแต่ละคลังระบุไว้แล้ว
+Source code ที่ TESA เป็นผู้เขียนเผยแพร่ภายใต้ **Apache License 2.0** ส่วน third-party library บางตัวใช้ license ของตัวเอง ซึ่งแต่ละ repo ระบุไว้แล้ว
 
-เว็บไซต์: [www.tesaiot.com](https://www.tesaiot.com) · [www.tesa.or.th](https://www.tesa.or.th) · อีเมล: [contact@tesa.or.th](mailto:contact@tesa.or.th)
+Website: [www.tesaiot.com](https://www.tesaiot.com) · [www.tesa.or.th](https://www.tesa.or.th) · Email: [contact@tesa.or.th](mailto:contact@tesa.or.th)
 
 </details>
 
